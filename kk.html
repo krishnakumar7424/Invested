@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Portfolio Tracker</title>
+    <link rel="stylesheet" href="kk2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Investment Portfolio Tracker</h1>
+        <form id="investment-form">
+            <input type="text" id="asset-name" placeholder="Asset Name" required>
+            <input type="number" id="amount-invested" placeholder="Amount Invested" required>
+            <input type="number" id="current-value" placeholder="Current Value" required>
+            <button type="submit">Add Investment</button>
+        </form>
+
+        <table id="investment-table">
+            <thead>
+                <tr>
+                    <th>Asset Name</th>
+                    <th>Amount Invested</th>
+                    <th>Current Value</th>
+                    <th>Change (%)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="investment-list">
+                
+            </tbody>
+        </table>
+
+        <h2>Total Portfolio Value: $<span id="total-value">0</span></h2>
+
+        <canvas id="portfolio-chart" width="40" height="40"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="kk3.js"></script>
+</body>
+</html>
